@@ -1,0 +1,33 @@
+body{
+  background-color: black;
+  margin: 100px 150px;
+}
+
+#title-home{
+  font-size: 44px;
+  font-family: sans-serif;
+  color: white;
+  padding-bottom: 40px;
+}
+a{
+  text-decoration: none;
+}
+.btn{
+  width: 95px ;
+  padding: 10px 0px;
+  background-color: $btn-background;
+  color: white;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  &:hover{
+    background-color: $hover-color;
+    transition: 450ms;
+  }
+}
+@mixin text-style($color,$font-size,$font-family){
+  color: $color;
+  font-size: $font-size;
+  font-family: $font-family;
+}
